@@ -1,6 +1,6 @@
 # copy-sort-polyfill
 ```
-Support sort without mutating original array
+Support Array.sort without mutating original array
 ```
 
 ## Getting started
