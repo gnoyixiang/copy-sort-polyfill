@@ -1,7 +1,5 @@
 # copy-sort-polyfill
-```
 Support Array.sort without mutating original array
-```
 
 ## Getting started
 ```
