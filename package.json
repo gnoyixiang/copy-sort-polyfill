@@ -5,6 +5,10 @@
   "license": "ISC",
   "author": "gnoyx",
   "main": "dist/index.js",
+  "files": [
+    "es",
+    "lib"
+  ],
   "scripts": {
     "build": "webpack",
     "check": "standard --verbose | snazzy",
