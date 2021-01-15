@@ -1,6 +1,6 @@
 {
   "name": "copy-sort-polyfill",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Support Array.sort without mutating original array",
   "license": "ISC",
   "author": "gnoyx",
