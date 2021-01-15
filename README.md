@@ -6,18 +6,18 @@ Support Array.sort without mutating original array
 npm install copy-sort-polyfill
 ```
 
-At the top level your application, import the library.
+At the top level your application, import the polyfill.
 ```
 require("copy-sort-polyfill")
 ```
 
 ## How it works
-To return a sorted array without mutating the original array, add the 2nd argument `mutate` as `false`
+To return a sorted array without mutating the original array, pass in the 2nd argument
 ```
 const arr = [1, 4, 3]
 const sorted = arr.sort(function (a, b) {
   return a - b
-}, false)
+}, true)
 console.log(arr)    // [1, 4, 3]
 console.log(sorted) // [1, 3, 4]
 ```

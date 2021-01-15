@@ -14,7 +14,7 @@ describe('Array sort function polyfill', () => {
     const arr = [1, 4, 3]
     const sorted = arr.sort(function (a, b) {
       return a - b
-    }, false)
+    }, true)
     expect(arr).toEqual([1, 4, 3])
     expect(sorted).toEqual([1, 3, 4])
   })

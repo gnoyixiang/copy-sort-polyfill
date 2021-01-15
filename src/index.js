@@ -3,9 +3,14 @@
 const nativeSort = Array.prototype.sort
 
 /* eslint-disable no-extend-native */
-Array.prototype.sort = function (compareFn, mutate = true) {
-  if (mutate) {
-    return nativeSort.call(this, compareFn)
+/**
+ * Returns a copy of the sorted array when copy is passed through
+ * @param {function} compareFn
+ * @param {boolean} copy
+ */
+Array.prototype.sort = function (compareFn, copy) {
+  if (copy) {
+    return nativeSort.call(this.slice(), compareFn)
   }
-  return nativeSort.call(this.slice(), compareFn)
+  return nativeSort.call(this, compareFn)
 }
